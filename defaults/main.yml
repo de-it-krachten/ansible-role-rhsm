@@ -1,0 +1,7 @@
+---
+
+# RHSM activation key
+rhsm_activationkey: "{{ lookup('env', 'RHSM_ACTIVATIONKEY') }}"
+
+# RHSM organization id
+rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"

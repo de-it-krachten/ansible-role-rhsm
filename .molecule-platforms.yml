@@ -1,0 +1,14 @@
+---
+
+- name: rhel7
+  image: registry.access.redhat.com/ubi7/ubi-init:latest
+  privileged: true
+  pre_build_image: false
+- name: rhel8
+  image: registry.access.redhat.com/ubi8/ubi-init:latest
+  privileged: true
+  pre_build_image: false
+- name: rhel9
+  image: registry.access.redhat.com/ubi9/ubi-init:latest
+  privileged: true
+  pre_build_image: false
