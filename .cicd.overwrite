@@ -7,6 +7,12 @@ generic:
   role_description: |
     Attach host to RHSM (Red Hat Subscription Management) 
 
+github:
+  fail_fast: false
+  vars:
+    RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
+    RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
+
 # Supported platforms
 platforms:
   - name: Red Hat Enterprise Linux 7
@@ -43,8 +49,3 @@ molecule:
       image: "registry.access.redhat.com/ubi8/ubi-init:latest"
       privileged: true
       pre_build_image: false
-
-github:
-  vars:
-    RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
-    RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
