@@ -1,0 +1,50 @@
+---
+
+# Generic
+generic:
+  role: ansible-role-rhsm
+  role_short: rhsm
+  role_description: |
+    Attach host to RHSM (Red Hat Subscription Management) 
+
+# Supported platforms
+platforms:
+  - name: Red Hat Enterprise Linux 7
+    image: registry.access.redhat.com/ubi7/ubi-init
+  - name: Red Hat Enterprise Linux 8
+    image: registry.access.redhat.com/ubi8/ubi-init
+  - name: Red Hat Enterprise Linux 9
+    ci: false
+
+# Ansible galaxy
+galaxy:
+  role_name: epel
+  namespace: de_it_krachten
+  description: epel
+  author: Mark van Huijstee
+  company: De IT Krachten BV
+  license: MIT
+  min_ansible_version: 2.9
+  platforms:
+    - name: EL
+      versions:
+        - 7
+        - 8
+
+# molecule
+molecule:
+  active: true
+  platforms:
+    - name: rhel7
+      image: "registry.access.redhat.com/ubi7/ubi-init:latest"
+      privileged: true
+      pre_build_image: false
+    - name: rhel8
+      image: "registry.access.redhat.com/ubi8/ubi-init:latest"
+      privileged: true
+      pre_build_image: false
+
+github:
+  vars:
+    RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
+    RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
