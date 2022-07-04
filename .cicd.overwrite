@@ -7,44 +7,67 @@ generic:
   role_description: |
     Attach host to RHSM (Red Hat Subscription Management) 
 
-# Supported platforms
-platforms:
-  - name: Red Hat Enterprise Linux 7
-    image: registry.access.redhat.com/ubi7/ubi-init
-  - name: Red Hat Enterprise Linux 8
-    image: registry.access.redhat.com/ubi8/ubi-init
-  - name: Red Hat Enterprise Linux 9
-    ci: false
-
-# Ansible galaxy
-galaxy:
-  role_name: epel
-  namespace: de_it_krachten
-  description: epel
-  author: Mark van Huijstee
-  company: De IT Krachten BV
-  license: MIT
-  min_ansible_version: 2.9
-  platforms:
-    - name: EL
-      versions:
-        - 7
-        - 8
-
-# molecule
-molecule:
-  active: true
-  platforms:
-    - name: rhel7
-      image: "registry.access.redhat.com/ubi7/ubi-init:latest"
-      privileged: true
-      pre_build_image: false
-    - name: rhel8
-      image: "registry.access.redhat.com/ubi8/ubi-init:latest"
-      privileged: true
-      pre_build_image: false
-
 github:
   vars:
     RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
     RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
+
+# Supported platforms
+platforms:
+  rhel7:
+    supported: true
+    ci: true
+    image: registry.access.redhat.com/ubi7/ubi-init
+    pre_build_image: false
+  rhel8:
+    supported: true
+    ci: true
+    image: registry.access.redhat.com/ubi8/ubi-init
+    pre_build_image: false
+  rhel9:
+    supported: true
+    ci: false
+    image: registry.access.redhat.com/ubi9/ubi-init
+    pre_build_image: false
+  centos7:
+    supported: false
+    ci: false
+  centos8:
+    supported: false
+    ci: false
+  rockylinux8:
+    supported: false
+    ci: false
+  oraclelinux8:
+    supported: false
+    ci: false
+  almalinux8:
+    supported: false
+    ci: false
+  almalinux9:
+    supported: false
+    ci: false
+  debian10:
+    supported: false
+    ci: false
+  debian11:
+    supported: false
+    ci: false
+  ubuntu1804:
+    supported: false
+    ci: false
+  ubuntu2004:
+    supported: false
+    ci: false
+  ubuntu2204:
+    supported: false
+    ci: false
+  fedora35:
+    supported: false
+    ci: false
+  fedora36:
+    supported: false
+    ci: false
+  alpine:
+    supported: false
+    ci: false

@@ -1,10 +1,8 @@
 ---
 
 - name: rhel7
-  image: registry.access.redhat.com/ubi7/ubi-init:latest
-  privileged: true
+  image: registry.access.redhat.com/ubi7/ubi-init
   pre_build_image: false
 - name: rhel8
   image: registry.access.redhat.com/ubi8/ubi-init:latest
-  privileged: true
   pre_build_image: false
