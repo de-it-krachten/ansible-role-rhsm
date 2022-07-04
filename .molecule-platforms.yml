@@ -1,10 +1,6 @@
 ---
 
 - name: rhel7
-  image: registry.access.redhat.com/ubi7/ubi-init:latest
-  privileged: true
-  pre_build_image: false
+  image: dropveter/rhel7-ansible
 - name: rhel8
-  image: registry.access.redhat.com/ubi8/ubi-init:latest
-  privileged: true
-  pre_build_image: false
+  image: dropveter/rhel8-ansible
