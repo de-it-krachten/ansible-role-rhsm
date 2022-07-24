@@ -4,5 +4,7 @@
   image: registry.access.redhat.com/ubi7/ubi-init
   pre_build_image: false
 - name: rhel8
-  image: registry.access.redhat.com/ubi8/ubi-init:latest
+  image: registry.access.redhat.com/ubi8/ubi-init
   pre_build_image: false
+- name: rockylinux9
+  image: geerlingguy/docker-rockylinux9-ansible:latest

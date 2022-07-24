@@ -13,6 +13,7 @@ Supported platforms
 - Red Hat Enterprise Linux 7
 - Red Hat Enterprise Linux 8
 - Red Hat Enterprise Linux 9<sup>1</sup>
+- RockyLinux 9
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms
@@ -34,7 +35,7 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 <pre><code>
 - name: sample playbook for role 'rhsm'
   hosts: all
-  vars:
+  become: "{{ molecule['converge']['become'] | default('yes') }}"
   tasks:
     - name: Include role 'rhsm'
       include_role:
