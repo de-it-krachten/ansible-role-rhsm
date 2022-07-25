@@ -13,7 +13,6 @@ Supported platforms
 - Red Hat Enterprise Linux 7
 - Red Hat Enterprise Linux 8
 - Red Hat Enterprise Linux 9<sup>1</sup>
-- RockyLinux 9
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms

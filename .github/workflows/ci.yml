@@ -93,10 +93,6 @@ jobs:
             playbook: converge.yml
             # continue_on_error: false
             # failfast: true
-          - distro: rockylinux9
-            playbook: converge.yml
-            # continue_on_error: false
-            # failfast: true
 
     steps:
       - name: Check out the codebase.
