@@ -34,7 +34,7 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 <pre><code>
 - name: sample playbook for role 'rhsm'
   hosts: all
-  vars:
+  become: "{{ molecule['converge']['become'] | default('yes') }}"
   tasks:
     - name: Include role 'rhsm'
       include_role:
