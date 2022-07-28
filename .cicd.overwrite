@@ -38,6 +38,9 @@ platforms:
   rockylinux8:
     supported: false
     ci: false
+  rockylinux9:
+    supported: false
+    ci: false
   oraclelinux8:
     supported: false
     ci: false
@@ -68,6 +71,6 @@ platforms:
   fedora36:
     supported: false
     ci: false
-  alpine:
+  alpine3:
     supported: false
     ci: false
