@@ -1,18 +1,18 @@
 ---
 
 - name: Fail if not RHEL
-  fail:
+  ansible.builtin.fail:
     msg: "This role is only supported on Red Hat Enterprise Linux"
   when: ansible_distribution != "RedHat"
 
 - name: Make sure required variables are given
-  assert:
+  ansible.builtin.assert:
     that:
       - rhsm_org_id is defined and rhsm_org_id|length > 0
       - rhsm_activationkey is defined and rhsm_activationkey|length > 0
   
 - name: Register host to RHSM based on org_id & activationkey
-  redhat_subscription:
+  community.general.redhat_subscription:
     state: present
     activationkey: "{{ rhsm_activationkey }}"
     org_id: "{{ rhsm_org_id }}"
