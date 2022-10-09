@@ -6,6 +6,16 @@
 Attach host to RHSM (Red Hat Subscription Management) 
 
 
+
+## Dependencies
+
+#### Roles
+None
+
+#### Collections
+- community.general
+- community.general
+
 ## Platforms
 
 Supported platforms
@@ -29,6 +39,7 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 
 
 
+
 ## Example Playbook
 ### molecule/default/converge.yml
 <pre><code>
@@ -37,6 +48,6 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
   become: "{{ molecule['converge']['become'] | default('yes') }}"
   tasks:
     - name: Include role 'rhsm'
-      include_role:
+      ansible.builtin.include_role:
         name: rhsm
 </pre></code>
