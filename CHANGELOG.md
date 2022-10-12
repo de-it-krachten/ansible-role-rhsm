@@ -1,3 +1,11 @@
+# [1.2.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.1.0...v1.2.0) (2022-10-12)
+
+
+### Features
+
+* Move to FQCN ([c36843d](https://github.com/de-it-krachten/ansible-role-rhsm/commit/c36843d1fd02027a61770dd5c931ef7e8e71b53c))
+* Update CI to latest standards ([bdb5c12](https://github.com/de-it-krachten/ansible-role-rhsm/commit/bdb5c12723dd5eca86f9306875d35f2d2e1b879b))
+
 # [1.1.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.0.0...v1.1.0) (2022-07-28)
 
 
