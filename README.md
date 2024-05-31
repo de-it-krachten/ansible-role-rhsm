@@ -22,6 +22,7 @@ Supported platforms
 - Red Hat Enterprise Linux 7
 - Red Hat Enterprise Linux 8
 - Red Hat Enterprise Linux 9<sup>1</sup>
+- Ubuntu 24.04 LTS
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms
@@ -44,7 +45,7 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 <pre><code>
 - name: sample playbook for role 'rhsm'
   hosts: all
-  become: "yes"
+  become: 'yes'
   tasks:
     - name: Include role 'rhsm'
       ansible.builtin.include_role:
