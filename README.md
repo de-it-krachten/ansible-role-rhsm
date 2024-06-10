@@ -44,7 +44,7 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 <pre><code>
 - name: sample playbook for role 'rhsm'
   hosts: all
-  become: "yes"
+  become: 'yes'
   tasks:
     - name: Include role 'rhsm'
       ansible.builtin.include_role:
