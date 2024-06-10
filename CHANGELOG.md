@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.3.0...v1.4.0) (2024-06-10)
+
+
+### Features
+
+* Add support for latest distributions ([57ee969](https://github.com/de-it-krachten/ansible-role-rhsm/commit/57ee969e79ffc8f769fe7e5b32084d70417c06ed))
+
 # [1.3.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.2.0...v1.3.0) (2023-08-16)
 
 
