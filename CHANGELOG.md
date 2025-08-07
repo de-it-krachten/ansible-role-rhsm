@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.5.0...v1.6.0) (2025-08-07)
+
+
+### Features
+
+* Add support for Red Hat Enterprise Linux 10 ([84f3f7a](https://github.com/de-it-krachten/ansible-role-rhsm/commit/84f3f7a05cee099aa3e2062f086b1c1754b0febc))
+
 # [1.5.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.4.0...v1.5.0) (2024-12-29)
 
 
