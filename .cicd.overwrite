@@ -7,39 +7,8 @@ generic:
   role_description: |
     Attach host to RHSM (Red Hat Subscription Management) 
 
-github:
-  vars:
-    RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
-    RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
-
 # Supported platforms
 platforms:
-  rhel7:
-    supported: true
-    ci: true
-    image: registry.access.redhat.com/ubi7/ubi-init
-    pre_build_image: false
-  rhel8:
-    supported: true
-    ci: true
-    image: registry.access.redhat.com/ubi8/ubi-init
-    pre_build_image: false
-  rhel9:
-    supported: true
-    ci: false
-    image: registry.access.redhat.com/ubi9/ubi-init
-    pre_build_image: false
-  rhel10:
-    supported: true
-    ci: false
-    image: registry.access.redhat.com/ubi9/ubi-init
-    pre_build_image: false
-  centos7:
-    supported: false
-    ci: false
-  centos8:
-    supported: false
-    ci: false
   rockylinux8:
     supported: false
     ci: false
@@ -67,15 +36,6 @@ platforms:
   almalinux10:
     supported: false
     ci: false
-  sles15:
-    ci: false
-    supported: false
-  opensuse15:
-    ci: false
-    supported: false
-  debian10:
-    supported: false
-    ci: false
   debian11:
     supported: false
     ci: false
@@ -85,24 +45,21 @@ platforms:
   debian13:
     supported: false
     ci: false
-  ubuntu1804:
-    supported: false
-    ci: false
-  ubuntu2004:
-    supported: false
-    ci: false
   ubuntu2204:
     supported: false
     ci: false
   ubuntu2404:
     supported: false
     ci: false
-  fedora41:
-    supported: false
-    ci: false
   fedora42:
     supported: false
     ci: false
-  alpine3:
+  fedora43:
     supported: false
     ci: false
+
+github:
+  vars:
+    RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
+    RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
+
