@@ -19,13 +19,13 @@ None
 
 Supported platforms
 
-- Red Hat Enterprise Linux 7
-- Red Hat Enterprise Linux 8
+- Red Hat Enterprise Linux 8<sup>1</sup>
 - Red Hat Enterprise Linux 9<sup>1</sup>
 - Red Hat Enterprise Linux 10<sup>1</sup>
 
 Note:
 <sup>1</sup> : no automated testing is performed on these platforms
+
 
 ## Role Variables
 ### defaults/main.yml
