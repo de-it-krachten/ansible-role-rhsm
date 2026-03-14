@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.6.0...v1.7.0) (2026-03-14)
+
+
+### Features
+
+* Drop support for Red Hat Enterprise Linux 7 ([fca6b09](https://github.com/de-it-krachten/ansible-role-rhsm/commit/fca6b098fb3593114bf2893ea131e30c8d327b49))
+
 # [1.6.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.5.0...v1.6.0) (2025-08-07)
 
 
