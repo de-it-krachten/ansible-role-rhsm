@@ -41,8 +41,8 @@ rhsm_org_id: "{{ lookup('env', 'RHSM_ORG_ID') }}"
 
 # RHSM repositories to enable
 rhsm_repositories:
-  - rhel-{{ ansible_distribution_major_version }}-for-x86_64-baseos-rpms
-  - rhel-{{ ansible_distribution_major_version }}-for-x86_64-appstream-rpms
+  - rhel-{{ ansible_facts.distribution_major_version }}-for-x86_64-baseos-rpms
+  - rhel-{{ ansible_facts.distribution_major_version }}-for-x86_64-appstream-rpms
 
 # Auto-subscribe to available content
 rhsm_auto_attach: false
