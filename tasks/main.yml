@@ -3,7 +3,7 @@
 - name: Fail if not RHEL
   ansible.builtin.fail:
     msg: "This role is only supported on Red Hat Enterprise Linux"
-  when: ansible_distribution != "RedHat"
+  when: ansible_facts.distribution != "RedHat"
 
 - name: Register host to RHSM
   ansible.builtin.include_tasks:
