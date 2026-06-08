@@ -21,8 +21,6 @@ env:
   RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
   RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
 
-
-
 jobs:
 
   lint:
