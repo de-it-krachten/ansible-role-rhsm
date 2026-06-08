@@ -21,19 +21,6 @@ env:
   RHSM_ORG_ID: "${{ secrets.RHSM_ORG_ID }}"
   RHSM_ACTIVATIONKEY: "${{ secrets.RHSM_ACTIVATIONKEY }}"
 
-# Create list of platforms with CI active
-
-# Get intersect of CI platforms & default platforms for phase1
-
-__platforms_ci:
-[]
-
-
-__platforms_phase1:
-[]
-
-
-
 
 
 jobs:
