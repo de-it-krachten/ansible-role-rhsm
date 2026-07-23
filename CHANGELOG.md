@@ -1,3 +1,11 @@
+# [1.8.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.7.0...v1.8.0) (2026-07-23)
+
+
+### Features
+
+* Add support for ansible-core 2.20+ ([a4f4742](https://github.com/de-it-krachten/ansible-role-rhsm/commit/a4f47427bbb2d98e4eb820d1f06bed7aecb8bba9))
+* Add support for unregistering host ([22e05e3](https://github.com/de-it-krachten/ansible-role-rhsm/commit/22e05e3491d7b006115a13030c73dd0b0f86f23a))
+
 # [1.7.0](https://github.com/de-it-krachten/ansible-role-rhsm/compare/v1.6.0...v1.7.0) (2026-03-14)
 
 
